@@ -213,6 +213,7 @@ def create_PIN_window():
         PinGUI = Toplevel(AttendanceGUI)
         PinGUI.title('Teacher Sign-in')
         PinGUI.geometry("320x120")
+        AttendanceGUI.withdraw()
 
         '''Tries to open teacher window if valid credentials supplied, or message box with error if not.'''
         def pin_check():
